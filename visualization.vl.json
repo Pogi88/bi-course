@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {
+        "Label": "Moisturizer",
+        "Brand": "LA MER",
+        "Name": "Crème de la Mer",
+        "Price": 175,
+        "Rank": 4.1,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 1
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "SK-II",
+        "Name": "Facial Treatment Essence",
+        "Price": 179,
+        "Rank": 4.1,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 1
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "DRUNK ELEPHANT",
+        "Name": "Protini™ Polypeptide Cream",
+        "Price": 68,
+        "Rank": 4.4,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 0
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "LA MER",
+        "Name": "The Moisturizing Soft Cream",
+        "Price": 175,
+        "Rank": 3.8,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 1
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "IT COSMETICS",
+        "Name": "Your Skin But Better™ CC+™ Cream with SPF 50+",
+        "Price": 38,
+        "Rank": 4.1,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 1
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "TATCHA",
+        "Name": "The Water Cream",
+        "Price": 68,
+        "Rank": 4.2,
+        "Combination": 1,
+        "Dry": 0,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 1
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "DRUNK ELEPHANT",
+        "Name": "Lala Retro™ Whipped Cream",
+        "Price": 60,
+        "Rank": 4.2,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 0
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "DRUNK ELEPHANT",
+        "Name": "Virgin Marula Luxury Facial Oil",
+        "Price": 72,
+        "Rank": 4.4,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 0
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "KIEHLS SINCE 1851",
+        "Name": "Ultra Facial Cream",
+        "Price": 29,
+        "Rank": 4.4,
+        "Combination": 1,
+        "Dry": 1,
+        "Normal": 1,
+        "Oily": 1,
+        "Sensitive": 1
+      },
+      {
+        "Label": "Moisturizer",
+        "Brand": "LA MER",
+        "Name": "Little Miss Miracle Limited-Edition Crème de la Mer",
+        "Price": 325,
+        "Rank": 5,
+        "Combination": 0,
+        "Dry": 0,
+        "Normal": 0,
+        "Oily": 0,
+        "Sensitive": 0
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Price", "type": "quantitative"},
+    "y": {"field": "Rank", "type": "quantitative"},
+    "color": {"field": "Brand", "type": "nominal"},
+    "shape": {"field": "Name", "type": "nominal"},
+    "opacity": {"field": "Dry", "type": "quantitative"}
+  },
+  "config": {}
+}
